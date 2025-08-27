@@ -7,14 +7,14 @@ Author: Turchyn Oleksandr
 git init
 //ініціалізовуємо репозиторій
 
-git remote add origin <repository_link>
-//прив'язуємо репозиторій на GitHub до локального репозиторія
-
 git add .
 //додаємо всі файли до коміту
 
-git commit -m "First upload to github"
+git commit -m "First commit"
 //створюємо коміт
 
-git pull origin main --rebase
+git remote add origin <repository_link>
+//прив'язуємо локальний репозиторій до репозиторія на GitHub
+
+git push -u origin main
 //завантажуємо репозиторій на GitHub
